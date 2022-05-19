@@ -23,3 +23,11 @@ const person1: PersonDetails = {
 
 console.log(person);
 console.log(person1);
+
+
+// example with functions
+function validatePerson (person: PersonDetails): void {
+    console.log('person name: ', person.name);
+}
+
+validatePerson(person);
