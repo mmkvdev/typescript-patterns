@@ -22,3 +22,15 @@ function printResult(num: number): void {
 }
 
 console.log(printResult(add(1,2)));
+
+
+
+// Function as types
+let functionExperimentation: (a: number, b: number) => number;
+
+functionExperimentation = add;
+// functionExperimentation = printResult;
+
+console.log('experimenting function as a type', functionExperimentation(1,2));
+
+
