@@ -23,7 +23,10 @@ function printResult(num: number): void {
 
 console.log(printResult(add(1,2)));
 
-
+function addAndHandle (n1: number, n2: number, cb: (num: number) => void) {
+    const result = n1 + n2;
+    cb(result);
+}
 
 // Function as types
 let functionExperimentation: (a: number, b: number) => number;
@@ -32,5 +35,9 @@ functionExperimentation = add;
 // functionExperimentation = printResult;
 
 console.log('experimenting function as a type', functionExperimentation(1,2));
+
+addAndHandle(25, 50, (result) => {
+    console.log(result);
+});
 
 
