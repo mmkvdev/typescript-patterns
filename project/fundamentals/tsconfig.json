@@ -99,5 +99,6 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "exclude": ["node_modules"] // would be the default,
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts"],
+  "files": ["./app.ts"]
 }
