@@ -15,4 +15,9 @@ const personObj: {
     };
 */
 
+const meesho = {
+  company: "e-commerce",
+  revenue: "unicorn",
+};
+
 console.log(personObj.age);

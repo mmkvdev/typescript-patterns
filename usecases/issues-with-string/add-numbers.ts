@@ -18,9 +18,9 @@ function addNumbersActionUseCase(num1: number, num2: number) {
 }
 
 /*
-    we are sending values of the input fields to add them, which is a vialation as the input values extracted 
+    we are sending values of the input fields to add them, which is a violation as the input values extracted 
     in this case are always strings, no matter what kind of input type of our input fields are! 
   */
 buttonElement?.addEventListener("click", function () {
-  console.log(add(+input_1.value, +input_2.value));
+  console.log(addNumbersActionUseCase(+input_1.value, +input_2.value));
 });
