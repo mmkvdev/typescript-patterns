@@ -9,8 +9,9 @@ function addNumbersOrStrings(
     addSum = input1 + input2;
   } else {
     console.log("consoling inputs: ", input1, input2);
+    addSum = input1.toString() + input2.toString();
   }
-  return "addSum";
+  return addSum;
 }
 
 const numbers = addNumbersOrStrings(1, 2);
