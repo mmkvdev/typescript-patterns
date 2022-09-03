@@ -10,7 +10,7 @@ function addNumbersOrStrings(
   } else {
     console.log("consoling inputs: ", input1, input2);
   }
-  return addSum;
+  return "addSum";
 }
 
 const numbers = addNumbersOrStrings(1, 2);
