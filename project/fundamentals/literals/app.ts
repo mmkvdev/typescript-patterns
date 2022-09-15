@@ -34,3 +34,6 @@ const addStrings = addNumbersOrStringsLiterals(
   "as-text"
 );
 console.log(addStrings);
+
+const addTwoNames = addNumbersOrStringsLiterals("Kengan", "Ashura", "as-text");
+console.log(addTwoNames);
