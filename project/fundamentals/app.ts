@@ -22,3 +22,10 @@ let n3: string; // best practise - always assign types to uninitialised variable
 n3 = "this is a string";
 
 addNumbersAtRoot(n1, n2, checkSum, customMessage);
+
+// compiler options example
+const button = document.querySelector("button");
+
+button?.addEventListener("click", () => {
+  console.log("click me");
+});
