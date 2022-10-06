@@ -30,3 +30,27 @@ department_1.describe();
 department_1.addEmployee("Martin");
 department_1.addEmployee("Meesho");
 department_1.printEmployeeInformation();
+
+class ITDepartment extends Department {
+  admins: string[] = [];
+  holiday: string;
+  constructor(id: string, holiday: string) {
+    super("pip", 23, id);
+    this.holiday = holiday;
+  }
+
+  addAdmins(admin: string) {
+    this.admins.push(admin);
+  }
+
+  printAdmins() {
+    console.log(this.admins);
+  }
+}
+
+const it = new ITDepartment("pop", "oct 5");
+it.describe();
+
+it.addEmployee("Martin");
+it.addEmployee("Cisco");
+it.printEmployeeInformation();
